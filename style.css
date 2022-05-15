@@ -1,82 +1,117 @@
+/* Typography */
 
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    text-align: center;
+    line-height: 1.6;
+    color: rgb(246, 255, 248);
+    background-color: rgb(72, 74, 71);
+}
+p, h2, ul {
+    margin: 0;
+}
 
+h2 {
+    margin-bottom: .8em;
+}
 
-/* *************************** */
-/* *****Phone Styles********** */
-/* *************************** */
-/* checking for screen of 350 px */
-@media screen and (min-width: 350px) {
-    * {
-        /* text-align: center; */
-        margin:  0;
-    }
-    body {
-        background-color: pink;
-        text-align: center;
-    }
+a {
+    color: #43AA8B;
+}
 
-    
-    #contact {
-        display: flex;
-        flex-direction: column;
-    }
+form {
+    text-align: left;
+}
+
+li {
+    list-style: none;
+}
+/* --------------Layout -----------------*/
+/* Nav */
+nav {
+    background-color: #0E1C36;
+    padding: 1em;
+}
+.nav-item a{
+    text-decoration: none;
+    color: rgb(234, 244, 244);
+}
+.nav-item a:hover, .nav-item a:focus {
+    text-decoration: underline;
+    color: #43AA8B;
+}
+
+.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+/* Blog */
+#blog, #about, #contact {
+    background-color: #0E1C36;
+}
+
+/* portfolio */
+#portfolio {
+    padding: 1em;
+}
+
+#portfolio h2 {
+    margin: 0;
+}
+
+.portfolio-link {
+    margin: 0;
+}
+
+/* footer  */
+.created-by {
+    padding: 1em;
+}
+
+.live-site-link {
+    margin-right: .5em;
+}
+/* general */
+img {
+    max-width: 100%;
+    border-radius: 50%;
+    margin: 1em 0;
+}
+
+.container {
+    max-width: 350px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5em;
+}
+.flex-column {
+    flex-direction: column;
+}
+
+.input {
+    width: 75%;
+    border-radius: 5px;
+}
+
+textarea {
+    resize: none;
+}
+
+@media (min-width: 750px) {
     .container {
-        max-width: 350px;
-        margin: 0 auto;
+        max-width: 600px;
+    }
+
+    img {
+        max-width: 100%;
+        width: 50%;
     }
 }
-/* *************************** */
-/* *****Tablet Styles********** */
-/* *************************** */
-@media screen and (min-width: 700px) {
-
-    body {
-        background-color: aqua;
-    }
-}
-    
-/* *************************** */
-/* ****Desktop Styles********** */
-/* *************************** */
-@media screen and (min-width: 1100px) {
-
-    a {
-        margin-left: .5em;
-    }
-
-    body {
-        background-color: cadetblue;
-        text-align: center;
-        line-height: 1.6;
-    }
-
-    form {
-        text-align: left;
-    }
-
-    li {
-        list-style: none;
-    }
-
-    textarea {
-        resize: none;
-    }
-
-    .container {
-        max-width: 1400px;
-        margin: 0 auto;
-    }
-
-    .flex {
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        gap: .5em;
-    }
-
-    .input {
-        width: 35%;
-        border-radius: 5px;
-    }
-}
-    

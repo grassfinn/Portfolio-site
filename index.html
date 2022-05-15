@@ -8,33 +8,74 @@
     <title>Andrew Harper | Front-End Web Developer</title>
   </head>
   <body>
-    <header>
-      <div class="container">
-        <nav class="flex">
-          <li>home</li>
-          <li>About</li>
-          <li>Portfolio</li>
-          <li>Blog</li>
-          <li>Contact</li>
-        </nav>
-      </div>
-    </header>
-    <main>
-      <div class="container">
+    <header id="home"></header>
+    <nav class="sticky">
+          <ul class="flex">
+            <li class="nav-item"> <a href="#home"> home</a> </li>
+            <li class="nav-item"> <a href="#portfolio"> Portfolio </a> </li>
+            <li class="nav-item"> <a href="#blog">Blog </a> </li>
+            <li class="nav-item"> <a href="#about">About</a> </li>
+            <li class="nav-item"> <a href="#contact">Contact</a> </li>
+          </ul>
+    </nav>
         <main>
-          <section id="about"></section>
-          <section id="portfolio"></section>
-          <section id="blog"></section>
+          <section id="portfolio">
+            <div class="container">
+              <h2>Portfolio</h2>
+              <a  class="portfolio-link" href="#">Github</a>
+            </div>
+          </section>
+          <section id="blog">
+            <div class="container">
+              <h2>Blog</h2>
+              <p>I write monthly technical blog posts at <a href=""> HarpCode</a> about various technical topics. Writing a blog helps me freshen up on my technical writing skills as well as fortify my learning of a topic. If you haven't made a blog or created content, I suggest finding a some sort of content creation to log your learning. It also is a great way to see how far you have developed!</p>
+            </div>
+          </section>
+          <section id="about"> 
+            <div class="container">
+                <h2>About Me</h2>
+                <img src="./me.png" alt="picture of Andrew">
+                <p>
+                  Hi, I'm Andrew Harper, a Front-End Web Developer based in the
+                  States! I'm a dreamer with a passion for helping people who enjoys
+                  incorporating my interests in education, music, and design with my
+                  coding skills.
+                  My experience with programming has been a constant journey since I
+                  was a kid. I remember I used to disassemble my family's old
+                  computers and be in awe of all the parts that were used to make it
+                  work. As a kid, I was never able to put them back together, but eventually
+                  that curiosity turned into a hobby of building computers which
+                  then turned into an interest to code.
+                  It wasn't until my early to mid twenties that I would learn how to
+                  code and realize how much I enjoyed it while I was pursing a degree in education. Since then,
+                  I've been learning Javascript and React and anything that peeks my interest. I have recently completed
+                  FreeCodeCamp's Javascript Bootcamp and taking other
+                  self-taught classes to keep improving my skills. I'm seeking a
+                  remote role where I can help a team achieve their goals. My
+                  passion in coding is to one day create fun interactive educational
+                  resources for all people!
+                </p>
+            </div>
+          </section>
         </main>
-      </div>
-    </main>
-    <footer>
+    <footer id="contact">
       <div class="container">
-        <form action="" id="contact" class="flex-column flex">
+        <form action="" id="contact-form" class="flex-column flex">
           <h2>CONTACT</h2>
-          <input type="text" name="input-name" id="input-name" placeholder="Your Name"
-          class="input"/>
-          <input type="email" name="input-email" id="input-email" placeholder="Your E-mail" class="input"/>
+          <input
+            type="text"
+            name="input-name"
+            id="input-name"
+            placeholder="Your Name"
+            class="input"
+          />
+          <input
+            type="email"
+            name="input-email"
+            id="input-email"
+            placeholder="Your E-mail"
+            class="input"
+          />
           <textarea
             name="input-message"
             id="input-message"
@@ -42,9 +83,9 @@
             rows="10"
             class="input"
           ></textarea>
-          <button>Submit</button>
+          <button>Contact Me</button>
         </form>
-        <p></p>
+        <p class="created-by"> Created by Andrew Harper</p>
       </div>
     </footer>
     <script src="/app.js"></script>
