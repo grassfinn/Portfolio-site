@@ -2,39 +2,45 @@ class Card {
   // properties
   title;
 
-  // image;
-
   link;
+
+  image;
   // constructor
-  constructor(title, link) {
+  constructor(title, link, image) {
     this.title = title;
-    // this.image = image
     this.link = link;
+    this.image = image
   }
   // methods
 }
 blackjackGame = new Card(
-  'Blackjack', 
-  'https://grassfinn.github.io/Blackjack-Game/');
+  'Blackjack',
+  'https://grassfinn.github.io/Blackjack-Game/',
+  './thumbnails/blackjack.PNG'
+);
 
 AdventureTimeParallax = new Card(
   'Adventure Time Parallax Site',
-  'https://grassfinn.github.io/Adventure-Time-Parallax-Site/'
+  'https://grassfinn.github.io/Adventure-Time-Parallax-Site/',
+  './thumbnails/parallax.PNG'
 );
 
 unitConversion = new Card(
   'Unit Conversion',
-  'https://grassfinn.github.io/Unit-Conversion/'
+  'https://grassfinn.github.io/Unit-Conversion/',
+  './thumbnails/unit conversion.PNG'
 );
 
 CounterApp = new Card(
   'Passenger Counter',
-  'https://grassfinn.github.io/passenger-counter-app/'
+  'https://grassfinn.github.io/passenger-counter-app/',
+  './thumbnails/counter.PNG'
 );
 
 passwordGenerator = new Card(
   'Password Generator',
-  'https://grassfinn.github.io/Password-Generator/'
+  'https://grassfinn.github.io/Password-Generator/',
+  './thumbnails/generator.PNG'
 );
 
 worldleWInput = new Card
@@ -45,14 +51,15 @@ let cardList = [blackjackGame, AdventureTimeParallax, passwordGenerator, unitCon
 
 console.log(cardList)
 
-let portfolioEl = document.querySelector('#portfolio')
+const portfolioEl = document.querySelector('#portfolio-container')
 
 
 cardList.forEach((item, index) => {
-    let title = item.title
-    let link = item.link
+    const title = item.title
+    const link = item.link
+    const image = item.image
     // create an article tag
-    let article = document.createElement('article')
+    const article = document.createElement('article')
     // set the id = to the index + 1
     article.setAttribute('id', 'card' + '-' + (index + 1))
     article.classList.add('portfolio-item')
@@ -60,24 +67,35 @@ cardList.forEach((item, index) => {
     portfolioEl.append(article)
 
     // target the cards by their article id
-    let cardArticle = document.getElementById('card-' + (index + 1))
+    const cardArticle = document.getElementById('card-' + (index + 1))
     // create and h2
-    let h3 = document.createElement('h3')
+    const h3 = document.createElement('h3')
     // append the h2 within the article
     cardArticle.append(h3)
     // set the text of the h2 to the title
     h3.textContent = title
+
+    // create the img
+    const img = document.createElement('img')
+    cardArticle.append(img)
+    img.classList.add('portfolio-img')
+    img.src = image
+
+    const div = document.createElement('div')
+    cardArticle.append(div)
     // create an a tag
-    let liveSite = document.createElement('a')
-    let gitHub = document.createElement('a')
+    const liveSite = document.createElement('a')
+    const gitHub = document.createElement('a')
     // append the a tag within the article with the link and text of github
-    cardArticle.append(liveSite)
-    liveSite.classList.add('live-site-link')
+    div.append(liveSite)
+    liveSite.classList.add('portfolio-link')
     liveSite.textContent = 'Live Site'
     liveSite.setAttribute('href', link)
     liveSite.setAttribute('target', '_blank')
-    cardArticle.append(gitHub)
+    div.append(gitHub)
     gitHub.textContent = 'GitHub'
     gitHub.setAttribute('href', '#')
     gitHub.setAttribute('target', '_blank')
+    gitHub.classList.add('portfolio-link');
+
 })
