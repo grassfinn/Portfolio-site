@@ -37,6 +37,8 @@ nav {
 .nav-item a{
     text-decoration: none;
     color: rgb(234, 244, 244);
+    text-transform: capitalize;
+    letter-spacing: 1px;
 }
 .nav-item a:hover, .nav-item a:focus {
     text-decoration: underline;
@@ -48,13 +50,19 @@ nav {
     position: sticky;
     top: 0;
 }
+
+#dark-mode:hover {
+    cursor: pointer;
+    color: #43AA8B;
+    transition: 1s;
+}
 /* Blog */
 #blog, #about, #contact {
     background-color: #0E1C36;
 }
 
 /* portfolio */
-#portfolio {
+.portfolio {
     padding: 2em 0;
     background-color: #B48B7D;
 }
@@ -69,7 +77,10 @@ nav {
     height: 300px;
     object-fit: contain;
     border-radius: 20px;
+}
 
+.portfolio-item h3 {
+    letter-spacing: 1px;
 }
 
 .portfolio-link:hover, .portfolio-link:focus {
@@ -106,7 +117,8 @@ h2 {
 }
 
 img {
-    max-width: 100%;
+    max-width: 50%;
+    width: 250px;
     border-radius: 50%;
     margin: 1em 0;
 }
@@ -139,6 +151,11 @@ textarea {
 
 html {
     scroll-behavior: smooth;
+}
+
+.dark-mode {
+    background: #0E1C36;
+    color: #EAF4F4;
 }
 
 @media (min-width: 1000px) {

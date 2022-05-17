@@ -6,48 +6,64 @@ class Card {
 
   image;
   // constructor
-  constructor(title, link, image) {
+  constructor(title, link, image, github) {
     this.title = title;
     this.link = link;
     this.image = image
+    this.github = github
   }
   // methods
 }
 blackjackGame = new Card(
   'Blackjack',
   'https://grassfinn.github.io/Blackjack-Game/',
-  './thumbnails/blackjack.PNG'
+  './thumbnails/blackjack.PNG',
+  'https://github.com/grassfinn/Blackjack-Game'
 );
 
 AdventureTimeParallax = new Card(
   'Adventure Time Parallax Site',
   'https://grassfinn.github.io/Adventure-Time-Parallax-Site/',
-  './thumbnails/parallax.PNG'
+  './thumbnails/parallax.PNG',
+  'https://github.com/grassfinn/Adventure-Time-Parallax-Site'
 );
 
 unitConversion = new Card(
   'Unit Conversion',
   'https://grassfinn.github.io/Unit-Conversion/',
-  './thumbnails/unit conversion.PNG'
+  './thumbnails/unit conversion.PNG',
+  'https://github.com/grassfinn/Unit-Conversion'
 );
 
 CounterApp = new Card(
   'Passenger Counter',
   'https://grassfinn.github.io/passenger-counter-app/',
-  './thumbnails/counter.PNG'
+  './thumbnails/counter.PNG',
+  'https://github.com/grassfinn/passenger-counter-app'
 );
 
 passwordGenerator = new Card(
   'Password Generator',
   'https://grassfinn.github.io/Password-Generator/',
-  './thumbnails/generator.PNG'
+  './thumbnails/generator.PNG',
+  'https://github.com/grassfinn/Password-Generator'
 );
 
-worldleWInput = new Card
+worldleWInput = new Card(
+  'Custom Input Wordle',
+  'https://grassfinn.github.io/Wordle-with-input/',
+  './thumbnails/wordle.PNG',
+  'https://github.com/grassfinn/Wordle-with-input'
+);
 
-pomodoroTimer = new Card
+pomodoroTimer = new Card(
+  'Pomodoro Timer',
+  'https://grassfinn.github.io/pomodoroTimer/',
+  './thumbnails/pomodoro.PNG',
+  'https://github.com/grassfinn/pomodoroTimer'
+);
 
-let cardList = [blackjackGame, AdventureTimeParallax, passwordGenerator, unitConversion, CounterApp]
+let cardList = [pomodoroTimer, blackjackGame, AdventureTimeParallax, passwordGenerator, worldleWInput, unitConversion, CounterApp]
 
 console.log(cardList)
 
@@ -58,6 +74,7 @@ cardList.forEach((item, index) => {
     const title = item.title
     const link = item.link
     const image = item.image
+    const github = item.github
     // create an article tag
     const article = document.createElement('article')
     // set the id = to the index + 1
@@ -94,8 +111,14 @@ cardList.forEach((item, index) => {
     liveSite.setAttribute('target', '_blank')
     div.append(gitHub)
     gitHub.textContent = 'GitHub'
-    gitHub.setAttribute('href', '#')
+    gitHub.setAttribute('href', github)
     gitHub.setAttribute('target', '_blank')
     gitHub.classList.add('portfolio-link');
 
+})
+
+const darkMode = document.getElementById('dark-mode')
+
+darkMode.addEventListener('click', () => {
+  document.querySelector('#portfolio').classList.toggle('dark-mode')
 })
