@@ -1,3 +1,6 @@
+* {
+    box-sizing: border-box;
+}
 /* Typography */
 
 body {
@@ -160,7 +163,7 @@ html {
 @media (min-width: 1000px) {
     /* general */
     .container {
-        width: 90%;
+        width: 60%;
         max-width: 950px;
     }
 
