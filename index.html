@@ -10,60 +10,82 @@
   <body>
     <header id="home"></header>
     <nav class="sticky">
-          <ul class="nav flex">
-            <li class="nav-item"> <a href="#home"> home</a> </li>
-            <li class="nav-item"> <a href="#portfolio"> Portfolio </a> </li>
-            <li class="nav-item"> <a href="#blog">Blog </a> </li>
-            <li class="nav-item"> <a href="#about">About</a> </li>
-            <li class="nav-item"> <a href="#contact">Contact</a> </li>
-            <li class="nav-item" id="dark-mode"><i class="fa-solid fa-moon"></i></li>
-          </ul>
+      <ul class="nav flex">
+        <li class="nav-item"><a href="#home"> home</a></li>
+        <li class="nav-item"><a href="#portfolio"> Portfolio </a></li>
+        <li class="nav-item"><a href="#blog">Blog </a></li>
+        <li class="nav-item"><a href="#about">About</a></li>
+        <li class="nav-item"><a href="#contact">Contact</a></li>
+        <li class="nav-item" id="dark-mode">
+          <i class="fa-solid fa-moon"></i>
+        </li>
+      </ul>
     </nav>
-        <main>
-          <section id="portfolio" class="portfolio">
-            <h2>Portfolio</h2>
-            <a  class="portfolio-link" href="https://github.com/grassfinn/Portfolio-site">Github</a>
-            <div id="portfolio-container" class="container grid">
-            </div>
-          </section>
-          <section id="blog">
-            <div class="container">
-              <h2>Blog</h2>
-              <p>I write monthly technical blog posts at <a href=""> HarpCode</a> about various technical topics. Writing a blog helps me freshen up on my technical writing skills as well as fortify my learning of a topic. If you haven't made a blog or created content, I suggest finding a some sort of content creation to log your learning. It also is a great way to see how far you have developed!</p>
-            </div>
-          </section>
-          <section id="about"> 
-            <div class="container">
-                <h2>About Me</h2>
-                <img src="./thumbnails/me.png" alt="picture of Andrew">
-                <p>
-                  Hi, I'm Andrew Harper, a Front-End Web Developer based in the
-                  States! I'm an enthusiast with a passion for helping people who enjoys
-                  incorporating my interests in education, music, and design with my
-                  coding skills.
-                  My experience with programming has been a constant journey since I
-                  was a kid. I remember I used to disassemble my family's old
-                  computers and be in awe of all the parts that were used to make it
-                  work. As a kid, I was never able to put them back together, but eventually
-                  that curiosity turned into a hobby of building computers which
-                  then turned into an interest to code.
-                  It wasn't until my early to mid twenties that I would learn how to
-                  code and realize how much I enjoyed it while I was pursing a degree in education. Since then,
-                  I've been learning Javascript and React and anything that peeks my interest. I have recently completed
-                  FreeCodeCamp's Javascript Bootcamp, MIT's CS50, and  I am currently taking other
-                  self-taught classes to keep improving my skills to continue in my aspiration to be the best programmer I can be. I'm seeking a remote role where I can help a team achieve their goals. My
-                  passion in coding is to one day create fun interactive educational
-                  resources for all people!
-                </p>
-            </div>
-          </section>
-        </main>
+    <main>
+      <section id="portfolio" class="portfolio">
+        <h2>Portfolio</h2>
+        <a
+          class="portfolio-link"
+          href="https://github.com/grassfinn/Portfolio-site"
+          target="_blank"
+          >Github</a
+        >
+        <div id="portfolio-container" class="container grid"></div>
+      </section>
+      <section id="blog">
+        <div class="container">
+          <h2>Blog</h2>
+          <p>
+            I write monthly technical blog posts at
+            <a href=""> HarpCode</a> about various technical topics. Writing a
+            blog helps me freshen up on my technical writing skills as well as
+            fortify my learning of a topic. If you haven't made a blog or
+            created content, I suggest finding a some sort of content creation
+            to log your learning. It also is a great way to see how far you have
+            developed!
+          </p>
+        </div>
+      </section>
+      <section id="about">
+        <div class="container">
+          <h2>About Me</h2>
+          <img src="./thumbnails/me.png" alt="picture of Andrew" />
+          <p>
+            Hi, I'm Andrew Harper, a Front-End Web Developer based in the
+            States! I'm an enthusiast with a passion for helping people who
+            enjoys incorporating my interests in education, music, and design
+            with my coding skills. My experience with programming has been a
+            constant journey since I was a kid. I remember I used to disassemble
+            my family's old computers and be in awe of all the parts that were
+            used to make it work. As a kid, I was never able to put them back
+            together, but eventually that curiosity turned into a hobby of
+            building computers which then turned into an interest to code. It
+            wasn't until my early to mid twenties that I would learn how to code
+            and realize how much I enjoyed it while I was pursing a degree in
+            education. Since then, I've been learning Javascript and React and
+            anything that peeks my interest. I have recently completed
+            FreeCodeCamp's Javascript Bootcamp, MIT's CS50, and I am currently
+            taking other self-taught classes to keep improving my skills to
+            continue in my aspiration to be the best programmer I can be. I'm
+            seeking a remote role where I can help a team achieve their goals.
+            My passion in coding is to one day create fun interactive
+            educational resources for all people!
+          </p>
+        </div>
+      </section>
+    </main>
     <footer id="contact">
       <div class="container">
-        <form action="" id="contact-form" class="flex-column flex">
+        <form
+          action="https://formsubmit.co/theharper@live.com"
+          method="POST"
+          id="contact-form"
+          class="flex-column flex"
+        >
           <h2>CONTACT</h2>
           <input
             type="text"
+            required
             name="input-name"
             id="input-name"
             placeholder="Your Name"
@@ -71,10 +93,16 @@
           />
           <input
             type="email"
+            required
             name="input-email"
             id="input-email"
             placeholder="Your E-mail"
             class="input"
+          />
+          <input
+            type="hidden"
+            name="_next"
+            value="https://grassfinn.github.io/Portfolio-site/thanks.html"
           />
           <textarea
             name="input-message"
@@ -85,10 +113,13 @@
           ></textarea>
           <button>Contact Me</button>
         </form>
-        <p class="created-by"> Created by Andrew Harper</p>
+        <p class="created-by">Created by Andrew Harper</p>
       </div>
     </footer>
     <script src="app.js"></script>
-    <script src="https://kit.fontawesome.com/33fc92d562.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/33fc92d562.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

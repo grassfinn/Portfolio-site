@@ -7,7 +7,7 @@ body {
     text-align: center;
     line-height: 1.6;
     color: rgb(246, 255, 248);
-    /* background-color: rgb(72, 74, 71); */
+    background-color: #0E1C36;
 }
 p, h2, ul {
     margin: 0;
@@ -73,10 +73,9 @@ nav {
 
 .portfolio-img {
     max-width: 100%;
-    width: 300px;
+    width: 250px;
     height: 300px;
     object-fit: contain;
-    border-radius: 20px;
 }
 
 .portfolio-item h3 {
@@ -117,9 +116,9 @@ h2 {
 }
 
 img {
-    max-width: 50%;
-    width: 250px;
-    border-radius: 50%;
+    max-width: 100%;
+    /* width: 250px; */
+    /* border-radius: 50%; */
     margin: 1em 0;
 }
 
