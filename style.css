@@ -68,6 +68,7 @@ nav {
 .portfolio {
     padding: 2em 0;
     background-color: #B48B7D;
+    transition: 1s;
 }
 
 .portfolio-link {
@@ -104,6 +105,10 @@ nav {
     padding: 1em;
     border-radius: 1em;
     background-color: #EAF4F4;
+}
+
+.headshot {
+    width: 45%;
 }
 
 h2 {
@@ -158,6 +163,7 @@ html {
 .dark-mode {
     background: #0E1C36;
     color: #EAF4F4;
+    transition: 1s;
 }
 
 @media (min-width: 1000px) {
@@ -169,7 +175,8 @@ html {
 
     img {
         max-width: 100%;
-        width: 50%;
+        /* width: 50%; */
+        /* border: solid black 5px; */
     }
     /* layout */
     /* nav */
