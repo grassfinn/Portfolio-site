@@ -19,7 +19,6 @@ darkMode.addEventListener('click', () => {
 })
 
 function render(){
-  for (const card in cardData){
     portfolioEl.innerHTML = blackjack.getCardHtml()
     portfolioEl.innerHTML += parallax.getCardHtml()
     portfolioEl.innerHTML += passwordGenerator.getCardHtml()
@@ -27,5 +26,4 @@ function render(){
     portfolioEl.innerHTML += unitConversion.getCardHtml()
     portfolioEl.innerHTML += worlde.getCardHtml()
   }
-}
 render()
