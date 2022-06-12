@@ -11,11 +11,10 @@ darkMode.addEventListener('click', () => {
 
 
 function render(){
-  const portfolioArr = ['blackjackGame', 'parallax', 'passwordGenerator', 'pomodoroTimer', 'unitConversion', 'wordle']
+  const portfolioArr = ['blackjackGame', 'parallax', 'passwordGenerator', 'pomodoroTimer', 'unitConversion', 'wordle', 'colorScheme']
   portfolioArr.forEach( item =>  {
     const itemArr = []
     itemArr.push(new Card(cardData[item]))
-    console.log(itemArr)
     itemArr.forEach(card => {
       portfolioEl.innerHTML += card.getCardHtml()
     })

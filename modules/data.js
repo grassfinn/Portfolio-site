@@ -40,6 +40,13 @@ const cardData = {
     thumbnail: 'thumbnails/1x/300pomodoro.png',
     repo: 'https://github.com/grassfinn/pomodoroTimer',
   },
+
+  colorScheme: {
+    title: 'Color Scheme Generator',
+    deployment: 'https://grassfinn.github.io/api-colorpicker/',
+    thumbnail: '',
+    repo: 'https://github.com/grassfinn/api-colorpicker',
+  },
 };
 
 export default cardData
