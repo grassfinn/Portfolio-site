@@ -5,11 +5,6 @@ const portfolioEl = document.querySelector('#portfolio-container')
 
 const darkMode = document.getElementById('dark-mode')
 
-darkMode.addEventListener('click', () => {
-  document.querySelector('#portfolio').classList.toggle('dark-mode')
-})
-
-
 function render(){
   const portfolioArr = ['blackjackGame', 'parallax', 'passwordGenerator', 'pomodoroTimer', 'unitConversion', 'wordle', 'colorScheme']
   portfolioArr.forEach( item =>  {
@@ -21,4 +16,8 @@ function render(){
   })
 
 } 
+darkMode.addEventListener('click', () => {
+  document.querySelector('#portfolio').classList.toggle('dark-mode')
+})
+
 render()
