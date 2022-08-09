@@ -206,3 +206,8 @@ nav {display: none;}
 
     
 }
+
+.about-me {
+    max-width: 1000px;
+    margin: 0 auto;
+}
