@@ -2,6 +2,7 @@ class Card {
   // constructor
   constructor(data) {
     // properties
+    // copys the date to the this keyword
     Object.assign(this, data);
   }
   // methods

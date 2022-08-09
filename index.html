@@ -5,75 +5,135 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"
+      rel="stylesheet"
+    />
     <title>Andrew Harper | Front-End Web Developer</title>
   </head>
   <body>
-    <header id="home"></header>
-    <nav class="sticky">
-      <ul class="nav flex">
-        <!-- <li class="nav-item"><a href="index.html"> home</a></li> -->
-        <li class="nav-item"><a href="#portfolio"> Portfolio </a></li>
-        <li class="nav-item"><a href="#blog">Blog </a></li>
-        <li class="nav-item"><a href="#about">About</a></li>
-        <li class="nav-item"><a href="#contact">Contact</a></li>
-        <li class="nav-item" id="dark-mode">
-          <i class="fa-solid fa-moon"></i>
-        </li>
-      </ul>
-    </nav>
-    <main>
-      <section id="portfolio" class="portfolio">
-        <h2>Portfolio</h2>
-        <a
-          class="portfolio-link"
-          href="https://github.com/grassfinn/Portfolio-site"
-          target="_blank"
-          >Github</a
-        >
-        <div id="portfolio-container" class="container grid"></div>
-      </section>
-      <section id="blog">
-        <div class="container">
-          <h2>Blog</h2>
+    <header id="home">
+      <div class="logo"></div>
+      <button class="nav-toggle" aria-label="toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+      <nav class="sticky">
+        <ul class="nav flex">
+          <!-- <li class="nav-item"><a href="index.html"> home</a></li> -->
+          <li class="nav-item"><a href="#portfolio"> Portfolio </a></li>
+          <li class="nav-item"><a href="#blog">Blog </a></li>
+          <li class="nav-item"><a href="#about">About</a></li>
+          <li class="nav-item"><a href="#contact">Contact</a></li>
+          <li class="nav-item" id="dark-mode">
+            <i class="fa-solid fa-moon"></i>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- intro -->
+    <section class="intro" id="home">
+      <h1 class="section-title">Hi, I am <strong> Andrew Harper </strong></h1>
+      <p class="section-subtitle section-subtitle-intro">Front-end Developer</p>
+      <img
+        class="headshot intro-img"
+        src="thumbnails/me.png"
+        alt="picture of Andrew Harper"
+      />
+    </section>
+
+    <!-- My Services  -->
+    <section class="my-services" id="services">
+      <h2 class="section-title-services">What I do</h2>
+      <div class="services">
+        <div class="service">
+          <h3>Development + Design</h3>
           <p>
-            I write monthly technical blog posts at
-            <a href="https://harpcode.tech/"> HarpCode</a> about various technical topics. Writing a
-            blog helps me freshen up on my technical writing skills as well as
-            fortify my learning of a topic. If you haven't made a blog or
-            created content, I suggest finding a some sort of content creation
-            to log your learning. It also is a great way to see how far you have
-            developed!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil,
+            asperiores. Perferendis maiores tenetur dignissimos accusamus minus.
+            Ea, animi praesentium hic ullam, at adipisci cum mollitia
+            exercitationem, impedit quibusdam architecto cumque.
           </p>
         </div>
-      </section>
-      <section id="about">
-        <div class="container">
-          <h2>About Me</h2>
-          <img src="./thumbnails/1x/meCIRCLE.png" alt="picture of Andrew" class="headshot" />
+        <div class="service">
+          <h3>Technical Writing</h3>
           <p>
-            Hi, I'm Andrew Harper, a Front-End Web Developer based in the
-            States! I'm an enthusiast with a passion for helping people who
-            enjoys incorporating my interests in education, music, and design
-            with my coding skills. My experience with programming has been a
-            constant journey since I was a kid. I remember I used to disassemble
-            my family's old computers and be in awe of all the parts that were
-            used to make it work. As a kid, I was never able to put them back
-            together, but eventually that curiosity turned into a hobby of
-            building computers which then turned into an interest to code. It
-            wasn't until my early to mid twenties that I would learn how to code
-            and realize how much I enjoyed it while I was pursing a degree in
-            education. Since then, I've been learning Javascript and React and
-            anything that peeks my interest. I have recently completed
-            FreeCodeCamp's Javascript Bootcamp, MIT's CS50, and I am currently
-            taking other self-taught classes to keep improving my skills to
-            continue in my aspiration to be the best programmer I can be. I'm
-            seeking a remote role where I can help a team achieve their goals.
-            My passion in coding is to one day create fun interactive
-            educational resources for all people!
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et, dolor
+            ab error deleniti a blanditiis cumque tempore nesciunt sequi vel
+            aspernatur accusamus sed tenetur numquam magni veritatis soluta eum.
+            Mollitia?
           </p>
         </div>
-      </section>
-    </main>
+        <div class="service">
+          <h3>Teach Web Development and Programming</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
+            veritatis id quas iure sed vero adipisci minus quod esse deserunt, a
+            tempora magnam in explicabo eaque nam repudiandae accusamus
+            provident.
+          </p>
+        </div>
+      </div>
+      <a href="#work" class="btn"> My Resume</a>
+    </section>
+
+    <!-- About me -->
+    <section class="about-me" id="about">
+      <h2 class="section-title scection-title-about">Who I am</h2>
+      <p class="section-subtitle section-subtitle-about">
+        Developer & Designer based out of Valdosta, Ga
+      </p>
+      <p>
+        Hi, I'm Andrew Harper, a Front-End Web Developer based in the States!
+        I'm an enthusiast with a passion for helping people who enjoys
+        incorporating my interests in education, music, and design with my
+        coding skills. My experience with programming has been a constant
+        journey since I was a kid. I remember I used to disassemble my family's
+        old computers and be in awe of all the parts that were used to make it
+        work. As a kid, I was never able to put them back together, but
+        eventually that curiosity turned into a hobby of building computers
+        which then turned into an interest to code. It wasn't until my early to
+        mid twenties that I would learn how to code and realize how much I
+        enjoyed it while I was pursing a degree in education. Since then, I've
+        been learning Javascript and React and anything that peeks my interest.
+        I have recently completed FreeCodeCamp's Javascript Bootcamp, MIT's
+        CS50, and I am currently taking other self-taught classes to keep
+        improving my skills to continue in my aspiration to be the best
+        programmer I can be. I'm seeking a remote role where I can help a team
+        achieve their goals. My passion in coding is to one day create fun
+        interactive educational resources for all people!
+      </p>
+    </section>
+
+    <!-- My Work -->
+
+    <section id="portfolio" class="portfolio">
+      <h2 class="section-title">Portfolio</h2>
+      <a
+        class="portfolio-link"
+        href="https://github.com/grassfinn/Portfolio-site"
+        target="_blank"
+        >Github</a
+      >
+      <div id="portfolio-container" class="container grid"></div>
+    </section>
+    <!-- My Blog  -->
+    <section id="blog">
+      <div class="container">
+        <h2 class="section-title">Follow My Blog</h2>
+        <p>
+          I write monthly technical blog posts at
+          <a href="https://harpcode.tech/"> HarpCode</a> about various technical
+          topics. Writing a blog helps me freshen up on my technical writing
+          skills as well as fortify my learning of a topic. If you haven't made
+          a blog or created content, I suggest finding a some sort of content
+          creation to log your learning. It also is a great way to see how far
+          you have developed!
+        </p>
+      </div>
+    </section>
+
     <footer id="contact">
       <div class="container">
         <!-- https://formsubmit.co/ -->
@@ -102,10 +162,7 @@
             placeholder="Your E-mail"
             class="input"
           />
-          <input
-            type="hidden"
-            name="_next"
-          />
+          <input type="hidden" name="_next" />
           <textarea
             name="input-message"
             id="input-message"
@@ -113,11 +170,26 @@
             rows="10"
             class="input"
           ></textarea>
-          <input type="hidden" name="_next" value="https://grassfinn.github.io/Portfolio-site/thankyou.html">
+          <input
+            type="hidden"
+            name="_next"
+            value="https://grassfinn.github.io/Portfolio-site/thankyou.html"
+          />
           <button>Contact Me</button>
         </form>
         <p class="created-by">Created by Andrew Harper</p>
       </div>
+      <ul class="social-list">
+        <li class="social-item">
+          <a href="" class="social-link" href="#">A</a>
+        </li>
+        <li class="social-item">
+          <a href="" class="social-link" href="#">B</a>
+        </li>
+        <li class="social-item">
+          <a href="" class="social-link" href="#">C</a>
+        </li>
+      </ul>
     </footer>
     <script src="app.js" type="module"></script>
     <script
