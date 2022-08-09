@@ -9,7 +9,7 @@ class Card {
   getCardHtml() {
     const { title, deployment, thumbnail, repo } = this;
     return `<article class='portfolio-item'>
-    <h3> ${title} </h3>
+    <h3 class="portfolio-title"> ${title} </h3>
     <img class='portfolio-img 'src='${thumbnail}'>
       <div>
       <a class='portfolio-link' href='${deployment}' target='_blank'> Live site </a>
@@ -19,4 +19,4 @@ class Card {
   }
 }
 
-export default Card
+export default Card;

@@ -47,6 +47,13 @@ const cardData = {
     thumbnail: '',
     repo: 'https://github.com/grassfinn/api-colorpicker',
   },
+
+  forecast: {
+    title: '16-Day Forecast',
+    deployment: 'https://grassfinn.github.io/16-day-forecast/',
+    thumbnail: '',
+    repo: 'https://github.com/grassfinn/16-day-forecast',
+  },
 };
 
-export default cardData
+export default cardData;

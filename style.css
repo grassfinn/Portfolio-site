@@ -21,9 +21,9 @@
     --fs-h2: 2.25rem;
     --fs-h3: 1.25rem;
     --fs-body: 1rem;
-
+    
     --bs: .25em .25em .75em rgba(0, 0, 0, .25),
-            0 .125em .125em, .25em rgba(0, 0, 0, .15);
+    0 .125em .125em, .25em rgba(0, 0, 0, .15);
 }
 
 @media (min-width: 800px) {
@@ -35,7 +35,18 @@
     }
 }
 
+
 /* General Styles  */
+
+.grid {
+      display: grid;
+      /* auto-fit to fit as much on the screen */
+        grid-template-columns: repeat(auto-fit,minmax(350px ,1fr));
+        grid-template-rows: 1fr 1fr;
+        justify-items: center;
+        gap: 2em;
+}
+
 body {
     background: var(--clr-light);
     color: var(--clr-dark);
@@ -210,4 +221,25 @@ nav {display: none;}
 .about-me {
     max-width: 1000px;
     margin: 0 auto;
+}
+
+
+/* Portfolio */
+
+.portfolio {
+    text-align: center;
+}
+
+.portfolio-img {
+    width: 350px;
+}
+
+.portfolio-link {
+
+    display: inline-block;
+    margin-top: 1em;
+}
+
+.portfolio-title {
+    margin: 1em;
 }
