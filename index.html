@@ -19,12 +19,16 @@
         <span class="hamburger"></span>
       </button>
       <nav class="sticky">
-        <ul class="nav flex">
+        <ul class="nav-list">
           <!-- <li class="nav-item"><a href="index.html"> home</a></li> -->
-          <li class="nav-item"><a href="#portfolio"> Portfolio </a></li>
-          <li class="nav-item"><a href="#blog">Blog </a></li>
-          <li class="nav-item"><a href="#about">About</a></li>
-          <li class="nav-item"><a href="#contact">Contact</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="#portfolio"> Portfolio </a>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#blog">Blog </a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
           <li class="nav-item" id="dark-mode">
             <i class="fa-solid fa-moon"></i>
           </li>
@@ -109,7 +113,7 @@
     <!-- My Work -->
 
     <section id="portfolio" class="portfolio">
-      <h2 class="section-title">Portfolio</h2>
+      <h2 class="section-title">My Work</h2>
       <a
         class="portfolio-link"
         href="https://github.com/grassfinn/Portfolio-site"
@@ -119,7 +123,7 @@
       <div id="portfolio-container" class="container grid"></div>
     </section>
     <!-- My Blog  -->
-    <section id="blog">
+    <section class="blog">
       <div class="container">
         <h2 class="section-title">Follow My Blog</h2>
         <p>
@@ -177,19 +181,27 @@
           />
           <button>Contact Me</button>
         </form>
-        <p class="created-by">Created by Andrew Harper</p>
       </div>
       <ul class="social-list">
         <li class="social-item">
-          <a href="" class="social-link" href="#">A</a>
+          <a class="social-link" href="https://twitter.com/hobojohn61"
+            ><i class="fa-brands fa-twitter"></i
+          ></a>
         </li>
         <li class="social-item">
-          <a href="" class="social-link" href="#">B</a>
+          <a class="social-link" href="https://github.com/grassfinn/"
+            ><i class="fa-brands fa-github"></i
+          ></a>
         </li>
         <li class="social-item">
-          <a href="" class="social-link" href="#">C</a>
+          <a
+            class="social-link"
+            href="https://www.linkedin.com/in/andrew-harper-867ba1222/"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
         </li>
       </ul>
+      <p class="created-by">Created by Andrew Harper</p>
     </footer>
     <script src="app.js" type="module"></script>
     <script
