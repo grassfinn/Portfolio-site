@@ -27,10 +27,10 @@ function render() {
     });
   });
 }
-darkMode.addEventListener('click', () => {
-  console.log('clicked');
-  document.querySelector('#portfolio').classList.toggle('dark-mode');
-});
+// darkMode.addEventListener('click', () => {
+//   console.log('clicked');
+//   document.querySelector('#portfolio').classList.toggle('dark-mode');
+// });
 
 render();
 
