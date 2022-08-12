@@ -6,6 +6,8 @@ const darkMode = document.getElementById('dark-mode');
 const navToggle = document.querySelector('.nav-toggle');
 const navLinks = document.querySelectorAll('.nav-link');
 
+const resume = document.getElementById('resume');
+
 function render() {
   const portfolioArr = [
     'blackjackGame',
