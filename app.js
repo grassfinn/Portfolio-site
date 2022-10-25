@@ -18,6 +18,7 @@ function render() {
     'wordle',
     'colorScheme',
     'forecast',
+    'travelLog'
   ];
   portfolioArr.forEach((item) => {
     const itemArr = [];
