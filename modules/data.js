@@ -50,7 +50,7 @@ const cardData = {
   colorScheme: {
     title: 'Color Scheme Generator',
     deployment: 'https://grassfinn.github.io/api-colorpicker/',
-    thumbnail: '',
+    thumbnail: 'thumbnails/1x/colors.jpg',
     repo: 'https://github.com/grassfinn/api-colorpicker',
     stack: 'vanilla',
   },
@@ -58,14 +58,14 @@ const cardData = {
   forecast: {
     title: '16-Day Forecast',
     deployment: 'https://grassfinn.github.io/16-day-forecast/',
-    thumbnail: '',
+    thumbnail: 'thumbnails/1x/forecast.png',
     repo: 'https://github.com/grassfinn/16-day-forecast',
     stack: 'vanilla',
   },
   travelLog: {
     title: 'React Travel Log',
     deployment: 'https://grassfinn.github.io/Travel-Log/',
-    thumbnail: '',
+    thumbnail: 'thumbnails/1x/travel.jpg',
     repo: 'https://github.com/grassfinn/Travel-Log',
     stack: 'React',
   },
