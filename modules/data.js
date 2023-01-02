@@ -69,6 +69,20 @@ const cardData = {
     repo: 'https://github.com/grassfinn/Travel-Log',
     stack: 'React',
   },
+  reactQuizApp: {
+    title: 'React Quiz App',
+    deployment: 'https://grassfinn.github.io/React-Quiz-App/',
+    thumbnail: 'thumbnails/1x/quiz.png',
+    repo: 'https://github.com/grassfinn/React-Quiz-App',
+    stack: 'React',
+  },
+  mtgCollection: {
+    title: 'Card Stacks',
+    deployment: 'https://grassfinn.github.io/MtgCollection/',
+    thumbnail: 'thumbnails/1x/mtg.png',
+    repo: 'https://github.com/grassfinn/MtgCollection',
+    stack: 'React',
+  },
 };
 
 export default cardData;

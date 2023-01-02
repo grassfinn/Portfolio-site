@@ -340,7 +340,7 @@ nav {
 }
 
 .portfolio-img {
-    width: 350px;
+    min-width: 350px;
     height: 350px;
     object-fit: cover;
     object-position: center;
@@ -350,7 +350,7 @@ nav {
 }
 
 .portfolio-img:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
     opacity: .75;
 }
 

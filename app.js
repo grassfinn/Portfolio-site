@@ -18,7 +18,9 @@ function render() {
     'wordle',
     'colorScheme',
     'forecast',
-    'travelLog'
+    'travelLog',
+    'reactQuizApp',
+    'mtgCollection'
   ];
   portfolioArr.forEach((item) => {
     const itemArr = [];
