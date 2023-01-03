@@ -10,7 +10,6 @@ const resume = document.getElementById('resume');
 
 function render() {
   const portfolioArr = [
-    'blackjackGame',
     'parallax',
     'passwordGenerator',
     'pomodoroTimer',

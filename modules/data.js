@@ -1,12 +1,4 @@
 const cardData = {
-  blackjackGame: {
-    title: 'Blackjack',
-    deployment: 'https://grassfinn.github.io/Blackjack-Game/',
-    thumbnail: 'thumbnails/1x/300blackjack.png',
-    repo: 'https://github.com/grassfinn/Blackjack-Game',
-    stack: 'vanilla',
-  },
-
   parallax: {
     title: 'Adventure Time Parallax Site',
     deployment: 'https://grassfinn.github.io/Adventure-Time-Parallax-Site/',
