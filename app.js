@@ -14,7 +14,6 @@ function render() {
     'passwordGenerator',
     'pomodoroTimer',
     'unitConversion',
-    'wordle',
     'colorScheme',
     'forecast',
     'travelLog',

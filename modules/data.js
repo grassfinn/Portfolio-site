@@ -23,14 +23,6 @@ const cardData = {
     stack: 'vanilla',
   },
 
-  wordle: {
-    title: 'Custom Input Wordle',
-    deployment: 'https://grassfinn.github.io/Wordle-with-input/',
-    thumbnail: 'thumbnails/1x/300wordle.png',
-    repo: 'https://github.com/grassfinn/Wordle-with-input',
-    stack: 'vanilla',
-  },
-
   pomodoroTimer: {
     title: 'Pomodoro Timer',
     deployment: 'https://grassfinn.github.io/pomodoroTimer/',
