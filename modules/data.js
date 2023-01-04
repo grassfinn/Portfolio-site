@@ -23,13 +23,13 @@ const cardData = {
     stack: 'vanilla',
   },
 
-  pomodoroTimer: {
-    title: 'Pomodoro Timer',
-    deployment: 'https://grassfinn.github.io/pomodoroTimer/',
-    thumbnail: 'thumbnails/1x/300pomodoro.png',
-    repo: 'https://github.com/grassfinn/pomodoroTimer',
-    stack: 'vanilla',
-  },
+  // pomodoroTimer: {
+  //   title: 'Pomodoro Timer',
+  //   deployment: 'https://grassfinn.github.io/pomodoroTimer/',
+  //   thumbnail: 'thumbnails/1x/300pomodoro.png',
+  //   repo: 'https://github.com/grassfinn/pomodoroTimer',
+  //   stack: 'vanilla',
+  // },
 
   colorScheme: {
     title: 'Color Scheme Generator',

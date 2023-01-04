@@ -12,7 +12,7 @@ function render() {
   const portfolioArr = [
     'parallax',
     'passwordGenerator',
-    'pomodoroTimer',
+    // 'pomodoroTimer',
     'unitConversion',
     'colorScheme',
     'forecast',
