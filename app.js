@@ -11,14 +11,14 @@ const resume = document.getElementById('resume');
 function render() {
   const portfolioArr = [
     'parallax',
-    'passwordGenerator',
-    // 'pomodoroTimer',
-    'unitConversion',
-    'colorScheme',
+    'mtgCollection',
     'forecast',
-    'travelLog',
     'reactQuizApp',
-    'mtgCollection'
+    'colorScheme',
+    'passwordGenerator',
+    'travelLog',
+    'unitConversion',
+    // 'pomodoroTimer',
   ];
   portfolioArr.forEach((item) => {
     const itemArr = [];
